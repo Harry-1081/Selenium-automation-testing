@@ -213,6 +213,65 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "75897564-59fc-43dd-b5ca-cda52cec54ce",
+    "name": "TC_005",
+    "commands": [{
+      "id": "bae9ee34-0f7f-4bb2-81f8-5b2a020ca7af",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d463c86e-c503-4a86-ac70-27ef44c6b5b3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,745.5999755859375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfa91fdd-40f9-40a8-a377-54ed6eed920f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gift Certificates",
+      "targets": [
+        ["linkText=Gift Certificates", "linkText"],
+        ["css=.col-sm-3:nth-child(3) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gift Certificates')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gift Certificates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d96523a-a054-4d11-b308-eab7ae5d5653",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=input-amount",
+      "targets": [
+        ["id=input-amount", "id"],
+        ["name=amount", "name"],
+        ["css=#input-amount", "css:finder"],
+        ["xpath=//input[@id='input-amount']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "a6520a25-c809-4116-b223-bbfa2bf773e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=.form-check-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "9faeb3c0-44ec-4a21-84ff-dedf8a22239d",
